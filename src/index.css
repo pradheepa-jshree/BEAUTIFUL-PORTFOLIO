@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 @theme {
+
+  /* base color values */
+  --primary: 221 83% 53%;
+  --primary-foreground: 0 0% 100%;
+
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --border: 214 32% 91%;
+  --card: 0 0% 100%;
+
   --color-border: hsl(val(--border));
   --color-background: hsl(val(--background));
   --color-foreground: hsl(val(--foreground));
@@ -33,7 +43,7 @@
       opacity: 1;
     }
     50%{
-      opacity: 0.8%;
+      opacity: 0.8;
     }
   }
 
@@ -94,10 +104,13 @@
 html {
   @apply scroll-smooth;
 }
+
 body {
-  @apply bg-background text-foreground transition-colors durarion-300;
-  font-feature-settings: "rling" 1, "calt" 1;
-}
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  transition: background-color 0.3s, color 0.3s;
+  font-feature-settings: "rlig" 1, "calt" 1;
+
 }
 
 @utility container {
@@ -132,13 +145,13 @@ body {
 
 @utility gradient-border{
   @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card)), hsl(val(--card)));
+  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
   background-clip: padding-box;
   border: 1px solid transparent;
 }
 
 @utility cosmic-button{
-  @apply px-6 py-2 rounded-full bg primary text-primary-foreground font-medium
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
         hover:scale-105 active:scale-95;
 
