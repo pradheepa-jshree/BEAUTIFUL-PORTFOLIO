@@ -172,3 +172,6 @@ body {
   padding: 0;
   text-align: center;
 }
+.glow {
+  text-shadow: 0 0 10px rgba(119, 176, 214, 0.806)
+}
