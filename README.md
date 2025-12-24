@@ -1,16 +1,74 @@
-# React + Vite
+Pradheepa--Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive personal portfolio built with React, Vite, and Tailwind CSS, featuring smooth animations, dark/light theme toggle, and a clean UI inspired by space aesthetics.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://your-vercel-link.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1]Features:
 
-## React Compiler
+ Dark / Light Mode (default dark, user preference saved)
+ Animated Star Background
+ Modern UI with Tailwind CSS
+ Responsive Navbar (Desktop & Mobile)
+ Category-based Skills Filter
+ Animated Skill Progress Bars
+ Featured Projects Section
+ Toast Notifications
+ Fully Responsive Design
+ Fast builds using Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+2]Tech Stack:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React 19, Vite
+Styling: Tailwind CSS v4
+Icons: Lucide React
+UI Utilities: clsx, tailwind-merge
+Notifications: Radix UI Toast
+Routing: React Router DOM
+Deployment: Vercel
+
+
+3]Getting Started
+
+1️⃣ Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+2️⃣ Navigate to the project
+cd vite-project
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start development server
+npm run dev
+
+📦 Build for Production
+npm run build
+
+Preview the build:
+npm run preview
+
+
+4]Theme System
+
+Default theme: Dark mode
+User preference stored in localStorage
+Automatically restored on revisit
+Toggle available in the navbar
+
+
+
+<img width="1870" height="864" alt="image" src="https://github.com/user-attachments/assets/3ad4857e-deaa-4196-8c8c-d32e6a8aa915" /> 
+
+
+
+5]What I Learned
+
+Advanced Tailwind CSS usage with custom utilities
+Theme persistence with localStorage
+Component-driven UI design
+Managing animations and layered backgrounds
+Clean project structuring for scalability
+Deploying modern React apps with Vercel
+
